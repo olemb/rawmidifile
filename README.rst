@@ -38,7 +38,7 @@ Note: The API is experimental and may change.
 
 Included examples:
 
-* ``mido_midifile.py`` - an alternative MIDI file reader/writer for
+*  ``mido_midifile.py`` - an alternative MIDI file reader/writer for
    Mido built on top of ``rawmidifile``. https://github.com/mido/mido/
 
 * ``meep_midifile.py`` - the beginnings of a MIDI file reader/writer

@@ -41,8 +41,11 @@ Included examples:
 *  ``mido_midifile.py`` - an alternative MIDI file reader/writer for
    Mido built on top of ``rawmidifile``. https://github.com/mido/mido/
 
-* ``meep_midifile.py`` - the beginnings of a MIDI file reader/writer
-  for Meep. https://github.com/olemb/meep/
+* ``meep_midifile.py`` - the beginnings of a MIDI file reader
+  for the experimental library Meep. https://github.com/olemb/meep/
+
+* ``midict_midifile.py`` - the beginnings of a MIDI file reader
+  for the experimental library midict. https://github.com/olemb/midict/
 
 
 Acknowledgements

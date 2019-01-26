@@ -13,19 +13,19 @@ from midict import from_bytes
 # though.
 meta_specs = {
     0x03: {
-        'prototype': {'msgtype': 'track_name', 'name': ''},
+        'prototype': {'type': 'track_name', 'name': ''},
         'has_text': True,
         'encode': lambda msg, encoding: msg['name'].encode(encoding),
         'decode': lambda data, encoding: {'name': data.decode(encoding)},
     },
     0x06: {
-        'prototype': {'msgtype': 'marker', 'text': ''},
+        'prototype': {'type': 'marker', 'text': ''},
         'has_text': True,
         'encode': lambda msg, encoding: msg['text'].encode(encoding),
         'decode': lambda data, encoding: {'text': data.decode(encoding)},
     },
     0x2f: {
-        'prototype': {'msgtype': 'end_of_track'},
+        'prototype': {'type': 'end_of_track'},
         'encode': lambda msg: b'',
         'decode': lambda data: {},
     },
@@ -49,8 +49,8 @@ def decode_msg(midi_bytes, encoding):
 
             return msg
         else:
-            return {'msgtype': 'unknown_meta',
-                    'type': type_byte, 'data': bytes(data)}
+            return {'type': 'unknown_meta',
+                    'type_byte': type_byte, 'data': bytes(data)}
     else:
         return from_bytes(midi_bytes)
 

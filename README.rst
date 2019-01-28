@@ -36,16 +36,10 @@ Note: The API is experimental and may change.
 * ``is_meta()`` checks if a messages is a meta message. (The first
   byte is 0xff and there is more than one byte.)
 
-Included examples:
+Included example:
 
 *  ``mido_midifile.py`` - an alternative MIDI file reader/writer for
    Mido built on top of ``rawmidifile``. https://github.com/mido/mido/
-
-* ``meep_midifile.py`` - the beginnings of a MIDI file reader
-  for the experimental library Meep. https://github.com/olemb/meep/
-
-* ``midict_midifile.py`` - the beginnings of a MIDI file reader
-  for the experimental library midict. https://github.com/olemb/midict/
 
 
 Acknowledgements

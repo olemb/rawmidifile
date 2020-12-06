@@ -26,7 +26,7 @@ def read_file_header(infile):
             raise EOFError
 
     return struct.unpack('>hhh', data[:6])
-         
+
 
 def read_byte(infile):
     return ord(infile.read(1))
@@ -215,7 +215,7 @@ def write_rawmidifile(outfile, tracks=(),
         with open(outfile, 'wb') as fp:
             return write_rawmidifile(fp, format=format,
                                      resolution=resolution, tracks=tracks)
-        
+
     header = struct.pack('>hhh', format,
                          len(tracks),
                          resolution)
